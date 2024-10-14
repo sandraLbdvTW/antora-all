@@ -1,0 +1,13 @@
+site:
+  title: Antora Test
+#  start_page: component-1:docs-1:page1.adoc
+content:
+  sources:
+    - url: https://github.com/sandraLbdvTW/antora-1.git
+      branches: [v1.0, v2.0]
+    - url: https://github.com/sandraLbdvTW/antora-2.git
+      branches: [v1.0]
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
