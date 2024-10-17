@@ -1,6 +1,7 @@
 site:
   title: Antora Test
   start_page: component-1::page1.adoc
+  url: https://sandralbdvtw.github.io/antora-all
 content:
   sources:
     - url: https://github.com/sandraLbdvTW/antora-1.git
@@ -11,6 +12,6 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-#antora:
-#  extensions:
-#    - '@antora/pdf-extension'
+antora:
+  extensions:
+    - '@antora/pdf-extension'
