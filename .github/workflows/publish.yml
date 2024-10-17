@@ -28,13 +28,11 @@ jobs:
       with:
         node-version: '18'
     - name: Install Antora
-      run: npm i antora
+      run: npm i -g antora
     - name: Install Antora Assembler
       run: npm i @antora/assembler@gitlab:antora/antora-assembler
     - name: Run Antora with PDF extension
       run: npx antora --extension @antora/assembler/pdf-extension antora-playbook.yml
-    - name: Generate Site
-      run: npx antora antora-playbook.yml
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v2
       with:
