@@ -27,6 +27,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+    - name: install bundler
+      run: gem install bundler
     - name: Install AsciiDoctor
       run: bundle config --local path .bundle/gems
     - name: run Bundle
