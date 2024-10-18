@@ -28,7 +28,9 @@ jobs:
       with:
         node-version: '18'
     - name: Install AsciiDoctor
-      run: gem install asciidoctor-pdf
+      run: bundle config --local path .bundle/gems
+    - name: run Bundle
+      run: bundle
     - name: Install Antora
       run: npm i antora @antora/pdf-extension
     - name: Generate Site
