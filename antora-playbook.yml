@@ -1,6 +1,6 @@
 site:
   title: Antora Test
-  start_page: component-1::page1.adoc
+  start_page: start-page::start-page.adoc
   url: https://sandralbdvtw.github.io/antora-all
 content:
   sources:
@@ -8,9 +8,13 @@ content:
       branches: [v1.0, v2.0]
     - url: https://github.com/sandraLbdvTW/antora-2.git
       branches: [v1.0, v2.0]
+    - url: https://github.com/sandraLbdvTW/antora-start-page.git
+      branches: [HEAD]
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+#    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+#    url: https://github.com/sandraLbdvTW/antora-ui/actions/runs/11426666968/artifacts/2079184233
+    url: /home/sandra/WebstormProjects/antora-ui/public/_
     snapshot: true
 #antora:
 #  extensions:
