@@ -12,10 +12,13 @@ content:
       branches: [HEAD]
 ui:
   bundle:
-#    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
 #    url: https://github.com/sandraLbdvTW/antora-ui/actions/runs/11426666968/artifacts/2079184233
-    url: /home/sandra/WebstormProjects/antora-ui/public/_
+#    url: /home/sandra/WebstormProjects/antora-ui/public/_
     snapshot: true
+#antora:
+#  extensions:
+#    - '@antora/lunr-extension'
 #antora:
 #  extensions:
 #    - '@antora/pdf-extension'
